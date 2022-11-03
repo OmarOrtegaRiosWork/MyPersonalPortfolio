@@ -1,0 +1,151 @@
+/*
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+*/
+
+.custom-btn {
+    background: #eee;
+    color: #5b5b5b;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 13px 29px;
+    font-size: 14px;
+    line-height: normal;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.custom-btn:hover {
+    color: #ffc200;
+}
+
+.custom-btn.custom-btn-bg {
+    background: #474559;
+    color: #ffffff;
+}
+
+.custom-btn.custom-btn-bg:hover {
+    background: #ffc200;
+    color: #ffffff !important;
+}
+
+.animated {
+    position: relative;
+}
+
+.animated-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    min-width: 260px;
+    position: relative;
+}
+
+.animated-item {
+    color: #ffc200;
+}
+
+.animated-item {
+    font-size: 38px;
+    line-height: inherit;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: BottomTotop 6s linear infinite 0s;
+}
+
+.animated-item:nth-child(2n+2) {
+    animation-delay: 2s;
+}
+
+.animated-item:nth-child(3n+3) {
+    animation-delay: 4s;
+}
+
+.owl-carousel .owl-nav span {
+    display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev:before,
+.owl-carousel .owl-nav .owl-next:before {
+    background: none;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: 'unicons';
+    font-size: 100px;
+    line-height: normal;
+}
+
+.owl-carousel .owl-nav .owl-prev:before {
+    content: '\e833';
+    left: 60px;
+}
+
+.owl-carousel .owl-nav .owl-next:before {
+    content: '\e836';
+    right: 60px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    background: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #ffc200;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #5b5b5b;
+}
+
+@media (min-width: 1270px) {
+    .owl-theme .owl-dots {
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .owl-carousel .owl-nav .owl-next:before {
+        content: '\e836';
+        right: 40px;
+    }
+    .owl-carousel .owl-nav .owl-prev:before {
+        content: '\e833';
+        left: 40px;
+    }
+}
+
+
+
+
+@media (max-width: 580px) {
+    .owl-theme .owl-nav {
+        display: none;
+    }
+}
